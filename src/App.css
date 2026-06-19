@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f1ea; }
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 { text-align: center; }
+
+button {
+  padding: 14px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #2b2b2b;
+  color: #fff;
+  cursor: pointer;
+}
+button.secondary { background: #ddd; color: #222; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.card { border: 2px solid transparent; border-radius: 12px; overflow: hidden; cursor: pointer; }
+.card.active { border-color: #2b2b2b; }
+.card img { width: 100%; display: block; }
