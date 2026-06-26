@@ -13,7 +13,8 @@
     "@supabase/supabase-js": "^2.108.2",
     "qrcode": "^1.5.4",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-draggable": "^4.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

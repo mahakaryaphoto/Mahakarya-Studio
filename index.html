@@ -9,5 +9,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+  // Baris ini sangat aman, tidak akan merusak apapun.
+  // Ini hanya "menyamar" jadi sistem lama agar library stiker mau bekerja.
+  window.process = { env: {} }
+</script>
   </body>
 </html>

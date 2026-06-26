@@ -7,6 +7,7 @@ import PhotoSelect from "./components/PhotoSelect";
 import EditScreen from "./components/EditScreen";
 import ResultScreen from "./components/ResultScreen";
 import "./App.css";
+import StickerFrame from './StickerFrame';
 
 const emptySession = {
   people: 1,
@@ -72,6 +73,14 @@ export default function App() {
           session={session}
           onChange={update}
           onNext={() => setStep("result")}
+        />
+      )}
+
+      {/* KOTAK STIKER HANYA MUNCUL DI HALAMAN EDIT */}
+      {step === "edit" && (
+        <StickerFrame 
+          fotoDariAtas={session.selected} 
+          warnaDariAtas={session.frameColor} 
         />
       )}
 
